@@ -1,5 +1,5 @@
 .post__list{
-    width: 100%;
+    /* width: 100%; */
     padding: 20px;
 }
 
@@ -16,11 +16,15 @@
     width: 100%;
 }
 
+.flex{
+    display: flex;
+}
+
 .post{
     padding:20px;
     border:1px solid teal;
     margin-top: 15px;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: space-between;
 }
