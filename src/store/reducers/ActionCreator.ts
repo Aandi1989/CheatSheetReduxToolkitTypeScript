@@ -15,3 +15,5 @@ export const fetchUsers = () => async (dispatch: AppDispatch) => {
     }
 }
 
+export const usersWorks = () => (userSlice.actions.usersWork());
+

@@ -6,12 +6,14 @@ interface UserState {
     users: IUser[];
     isLoading: boolean;
     error: string;
+    itWorks: boolean;
 }
 
 const initialState: UserState = {
     users: [],
     isLoading: false,
     error: '',
+    itWorks:false
 }
 
 export const userSlice = createSlice({
@@ -29,6 +31,9 @@ export const userSlice = createSlice({
         usersFetchingError(state, action: PayloadAction<string>) {
             state.isLoading = false;
             state.error = action.payload
+        },
+        usersWork(state) {
+            state.itWorks = !state.itWorks;
         }
     }
 }
